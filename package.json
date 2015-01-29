@@ -1,0 +1,41 @@
+{
+  "name": "mhm",
+  "version": "0.0.1",
+  "description": "Multi Host Manager",
+  "main": "lib/mhm.js",
+	"bin": {
+		"mhm": "bin/mhm"
+	},
+	"preferGlobal": "true",
+  "dependencies": {
+    "express": "^4.11.1",
+    "tmp": "^0.0.24"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zaucy/node-mhm.git"
+  },
+  "keywords": [
+    "mhm",
+    "multi",
+    "host",
+    "manager",
+    "multiple",
+    "host",
+    "manager",
+    "multi"
+  ],
+  "author": "Ezekiel Warren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zaucy/node-mhm/issues"
+  },
+  "homepage": "https://github.com/zaucy/node-mhm",
+  "engines": {
+    "iojs": ">=1.0.4"
+  }
+}
