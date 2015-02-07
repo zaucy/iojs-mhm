@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zaucy/node-mhm.git"
+    "url": "https://github.com/zaucy/iojs-mhm.git"
   },
   "keywords": [
     "mhm",
@@ -32,9 +32,9 @@
   "author": "Ezekiel Warren",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zaucy/node-mhm/issues"
+    "url": "https://github.com/zaucy/iojs-mhm/issues"
   },
-  "homepage": "https://github.com/zaucy/node-mhm",
+  "homepage": "https://github.com/zaucy/iojs-mhm",
   "engines": {
     "iojs": ">=1.1.0"
   }
