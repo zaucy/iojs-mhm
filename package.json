@@ -1,6 +1,6 @@
 {
   "name": "mhm",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Multi Host Manager",
   "main": "lib/mhm.js",
 	"bin": {
@@ -36,6 +36,6 @@
   },
   "homepage": "https://github.com/zaucy/node-mhm",
   "engines": {
-    "iojs": ">=1.0.4"
+    "iojs": ">=1.1.0"
   }
 }
