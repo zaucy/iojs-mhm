@@ -1,10 +1,13 @@
 # Getting Started
+
 Install mhm via npm
 ```
 npm install -g mhm
 ```
 
-Then create a `host` folder filled with directories with the name of each host to manage.
+### Using the CLI
+
+First create a host folder and inside that host folder create a folder for each hostname.
 ```
 /host
   /my-website.com
@@ -12,12 +15,50 @@ Then create a `host` folder filled with directories with the name of each host t
   /127.0.0.1
 ```
 
-In order for `mhm` to manage each host they must include a `host.json` file with at least the key `main`. It should point to the file `mhm` should run when starting the host.
+Each hostname folder should contain the file `host.json` with the key main pointing to the js file the manager should run.
 
-Then run mhm with the http ports you'd like your hosts to use and pointed to the host folder.
+Then change the current directory to your host folder you created earlier and set the http ports you'd like to manage on each host.
 
 ```
-mhm --hosts-dir=/host --http=80,8080
+cd /host
+mhm --http=80,8080
 ```
 
-The above command will listen on port 80 and port 8080 and all servers each host tries to create will go through the manager instead to be parsed and sent to the appropriate host.
+In the case above mhm will manage ports `80` and `8080`.
+
+### Using mhm programmatically
+
+Require the mhm module.
+
+```javascript
+var mhm = require("mhm");
+```
+
+Create a manager.
+
+```javascript
+var manager = mhm.createManager();
+```
+
+Add servers to manage.
+
+```javascript
+manager.addServer("htto", 80);
+manager.addServer("http", 8080);
+
+// or do it in mhm.createManager
+
+var manager = mhm.createManager({
+	servers: {
+		http: [80, 8080]
+	}
+});
+```
+
+Add hosts.
+
+```javascript
+manager.addHost("my-website.com", "/host/my-website.com");
+manager.addHost("127.0.0.1", "/host/127.0.0.1");
+manager.addHost("localhost", "/host/localhost");
+```
