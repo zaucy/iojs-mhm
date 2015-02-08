@@ -43,7 +43,7 @@ var manager = mhm.createManager();
 Add servers to manage.
 
 ```javascript
-manager.addServer("htto", 80);
+manager.addServer("http", 80);
 manager.addServer("http", 8080);
 
 // or do it in mhm.createManager
