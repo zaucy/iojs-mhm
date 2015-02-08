@@ -1,6 +1,6 @@
 {
   "name": "mhm",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Multi Host Manager",
   "main": "lib/mhm.js",
 	"bin": {
