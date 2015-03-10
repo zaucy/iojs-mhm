@@ -1,15 +1,16 @@
 {
   "name": "mhm",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Multi Host Manager",
   "main": "lib/mhm.js",
-	"bin": {
-		"mhm": "bin/mhm"
-	},
-	"preferGlobal": "true",
+  "bin": {
+    "mhm": "bin/mhm"
+  },
+  "preferGlobal": "true",
   "dependencies": {
     "express": "^4.11.1",
-    "tmp": "^0.0.24"
+    "npm": "^2.5.0",
+    "tmp": "0.0.24"
   },
   "devDependencies": {},
   "scripts": {
