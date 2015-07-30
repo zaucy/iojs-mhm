@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+
+    <button onclick="javascript:doXMLHttpRequest()">XMLHttpRequest</button>
+
+  </body>
+  <script>
+
+    function doXMLHttpRequest() {
+      var xmlHttpReq = new XMLHttpRequest;
+      xmlHttpReq.onreadystatechange = function(state) {
+
+        console.log(state);
+
+      };
+
+      xmlHttpReq.open("POST", "/xml-http-request");
+      xmlHttpReq.send();
+    }
+
+  </script>
+</html>
